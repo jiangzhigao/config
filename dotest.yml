@@ -1,18 +1,16 @@
-
 # ≈‰÷√git≤÷ø‚µÿ÷∑
 spring:
-  profiles:
-    active:dev
+  application:
+    name: test
   cloud:
     config:
-    label:master
-    server:
-      default-application-name:config-server
+      server:
+        default-application-name: config-server
         git:
-            uri:https://github.com/jiangzhigao/config
-            search-paths:/**
-            username:roach_laojiang@163.com
-            password:2618289qq
+            uri: https://github.com/jiangzhigao/config
+            search-paths: /**
+            username: roach_laojiang@163.com
+            password: 2618289qq
 
 server:
-    port:7100
+    port: 7100
