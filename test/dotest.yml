@@ -1,0 +1,16 @@
+# ≈‰÷√git≤÷ø‚µÿ÷∑
+spring:
+  application:
+    name: test
+  cloud:
+    config:
+      server:
+        default-application-name: config-server
+        git:
+            uri: https://github.com/jiangzhigao/config
+            search-paths: /**
+            username: roach_laojiang@163.com
+            password: 2618289qq
+
+server:
+    port: 7100
